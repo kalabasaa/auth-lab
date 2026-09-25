@@ -2,7 +2,7 @@
 
 # Laravel Authentication Lab
 
-### A Laravel-based authentication system built for Web Systems and Technologies
+### A Laravel-based authentication system built for Systems Integration and Architecture 1
 
 A simple academic project focused on implementing **user registration, login, logout, authentication middleware, routing, and protected pages** using Laravel, Breeze, and Livewire.
 
@@ -19,7 +19,7 @@ A simple academic project focused on implementing **user registration, login, lo
 
 ## About
 
-**Laravel Authentication Lab** is a simple authentication application created as part of **Web Systems and Technologies**.
+**Laravel Authentication Lab** is a simple authentication application created as part of **Systems Integration and Architecture 1**.
 
 The project demonstrates how authentication works in Laravel through user registration, login, logout, and middleware-protected routes.
 
@@ -60,94 +60,16 @@ The application uses **Laravel Breeze** with **Livewire** and **Livewire Blaze**
 
 ---
 
-## Database Schema
-
-### `users`
-
-| Column              | Type      | Constraints       |
-| ------------------- | --------- | ----------------- |
-| `id`                | BIGINT    | Primary Key       |
-| `name`              | VARCHAR   | Required          |
-| `email`             | VARCHAR   | Required, Unique  |
-| `email_verified_at` | TIMESTAMP | Nullable          |
-| `password`          | VARCHAR   | Required          |
-| `remember_token`    | VARCHAR   | Nullable          |
-| `created_at`        | TIMESTAMP | Laravel Timestamp |
-| `updated_at`        | TIMESTAMP | Laravel Timestamp |
-
----
-
-## Routes
-
-| Method | Route        | Purpose                         |
-| ------ | ------------ | ------------------------------- |
-| GET    | `/register`  | Display registration page       |
-| POST   | `/register`  | Process user registration       |
-| GET    | `/login`     | Display login page              |
-| POST   | `/login`     | Process user login              |
-| GET    | `/dashboard` | Display authenticated dashboard |
-| POST   | `/logout`    | Log out the authenticated user  |
-
----
-
-## Middleware
-
-The dashboard is protected using Laravel's built-in **`auth` middleware**.
-
-Unauthenticated users who attempt to access the dashboard are redirected to the login page.
-
-```php
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware('auth');
-```
-
----
-
-## Project Structure
-
-```text
-auth-lab/
-│
-├── app/
-│   ├── Livewire/
-│   │
-│   └── Models/
-│       └── User.php
-│
-├── database/
-│   ├── migrations/
-│   │   ├── create_users_table.php
-│   │   └── create_sessions_table.php
-│   │
-│   └── database.sqlite
-│
-├── resources/
-│   └── views/
-│       ├── components/
-│       │
-│       ├── layouts/
-│       │
-│       └── pages/
-│
-├── routes/
-│   ├── web.php
-│   └── auth.php
-│
-├── .env
-├── composer.json
-├── package.json
-└── README.md
-```
-
----
-
 ## Course Information
 
-**Course:** Web Systems and Technologies
+**Course:** Systems Integration and Architecture 1
+
 **Laboratory:** Midterm Laboratory 1
+
 **Topic:** Login, Registration, and Middleware Authentication in Laravel
+
 **Academic Year:** 2026–2027
+
 **Semester:** First Semester
 
 ---
