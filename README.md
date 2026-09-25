@@ -58,6 +58,14 @@ The application uses **Laravel Breeze** with **Livewire** and **Livewire Blaze**
 
 ![Protected Route](screenshots/middleware.png)
 
+
+### Screen Recording
+
+https://github.com/user-attachments/assets/73c95ff7-0453-43f0-8c09-0745f65c77c0
+
+
+
+
 ---
 
 ## Course Information
